@@ -119,7 +119,8 @@ namespace Beautiz_server.Models
                     (string)reader["credit_validate"],
                     (string)reader["credit_cvv"],
                     (string)reader["latitude"],
-                    (string)reader["longitude"]);
+                    (string)reader["longitude"],
+                    (int)reader["TypeOfBuss"]);
                 ul.Add(s);
             }
             comm.Connection.Close();

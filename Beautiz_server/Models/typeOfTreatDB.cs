@@ -28,7 +28,8 @@ namespace Beautiz_server.Models
             {
                 typeOfTreat s = new typeOfTreat(
                     (int)reader["typeId"],
-                    (string)reader["name"]);
+                    (string)reader["name"],
+                    (string)reader["photo"]);
                 ul.Add(s);
             }
             comm.Connection.Close();

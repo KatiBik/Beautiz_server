@@ -21,13 +21,14 @@ namespace Beautiz_server.Models
         public string credit_cvv { get; set; }
         public string latitude { get; set; }
         public string longitude { get; set; }
+        public int type { get; set; }
 
 
         public Bussiness()
         {
 
         }
-        public Bussiness(int id, string name, string sum, string pn, string med, string address, int poin, string ph, string mail, string cn, string cv, string cc, string la, string lo)
+        public Bussiness(int id, string name, string sum, string pn, string med, string address, int poin, string ph, string mail, string cn, string cv, string cc, string la, string lo,int type)
         {
             this.Bussiness_Id = id;
             this.Bussiness_name = name;
@@ -43,6 +44,7 @@ namespace Beautiz_server.Models
             this.credit_cvv = cc;
             this.latitude = la;
             this.longitude = lo;
+            this.type = type;
         }
     }
 }

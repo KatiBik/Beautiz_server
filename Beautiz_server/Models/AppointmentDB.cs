@@ -30,7 +30,7 @@ namespace Beautiz_server.Models
         {
             string strComm =
                 $" INSERT INTO Appointment(appDate , UserEmail, BussID, TreatID)" +
-                $" VALUES('{appointment2Insert.appDate}', " +
+                $" VALUES('{appointment2Insert.appDate.ToString("yyyy-MM-dd HH:mm")}', " +
                 $" '{appointment2Insert.UserEmail}', " +
                 $" '{appointment2Insert.BussID}', " +
                 $" '{appointment2Insert.TreatID}'); ";
